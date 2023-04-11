@@ -43,6 +43,13 @@ elegir si desea realizar la consulta hablando o escribiendo.</P>
         <UL>
             <P Align="justify">Descargar el proyecto desde el siguiente enlace: <a href="https://github.com/GuerreroAzul/ChatbotCM.git">Enlace</a></P>
         </UL>
+    <H3><B>Paso 2:</B></H3>
+        <UL>
+            <P Align="justify">Descargar el proyecto desde el siguiente enlace: <a href="https://github.com/GuerreroAzul/ChatbotCM.git">Enlace</a></P>
+        </UL>
+   
+        sudo apt-get update -y && sudo apt-get upgrade -y
+        
 </UL>
 
 <H2 id="Acceso">:rocket: Acceso al proyecto</H2>
