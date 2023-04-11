@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../file/icon/chatbot.png" sizes="16x16">
+    <link rel="stylesheet" href='/file/css/main.css' />
+  </head>
+  <body>
+    <div class="imagen">
+    <img src="../file/icon/LogoChatbot.png" alt="logo" style="width:400px"> 
+    </div>
+    <div class="chatbot">
+      <div class="chat-header">
+     <h2>CHATBOTCM</h2>
+      </div>
+
+      <div class="chat-body">
+        <div class="scroll">
+          <table>
+            <tbody>
+              {% for chat in chats %}
+                <tr>
+                    <td>{{ chat[0] }}</td>
+                    <td>{{ chat[1] }}</td>
+                    <td>{{ chat[2] }}</td>
+                    <td>{{ chat[3] }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>    
+        </div>
+        <!--
+        <div class="chat-message">
+          <img src="../file/icon/chatbot.png" height ="40px" width="40px" /><p>Hola, Soy un chatbot diseñado para proporcionar información médica básica.</p>
+        </div>
+
+        <div class="transcript">
+          <p class="user" style="display: block"><img src="../file/icon/usuario.png" height ="30px" width="30px" />{{transcript}}</p>
+          <p class="bot" style="display: block" ><img src="../file/icon/chatbot.png" height ="40px" width="40px" />{{response}}</p>
+        </div>
+        -->
+      </div>
+
+      <div class="chat-footer">
+        <form class="form" action="/result" method="post">
+            <input type="text" id="Inputbox" name="text" value="{{textbox}}" placeholder="Escriba aquí su pregunta..."></input>
+            <button type="submit" name="choice" value="h"><img src="../file/icon/micro.png" height ="20px" width="20px" /></button>
+            <button type="submit" name="choice" value="e"><img src="../file/icon/enviar.png" height ="30px" width="30px"/></button>
+        </form>
+
+      </div>
+    </div>
+   <div>
+    <button class="icono-btn-Login" onclick="window.location.href='/login'">Login</button>
+  </div>
+</body>
+</html>

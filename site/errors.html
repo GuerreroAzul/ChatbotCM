@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../file/icon/chatbot.png" sizes="16x16">
+    <link rel="stylesheet" href='/file/css/admin.css' />
+
+</head>
+<body style="background-color: #CDD6E1;">
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Questionary</a></li>
+            <li><a href="{{ url_for('error') }}">Error Question</a> </li>
+            <li><a href="{{ url_for('user') }}">Users</a></li>
+            <li><a href="{{ url_for('logout') }}">Sign off</a></li>
+        </ul>
+    </nav>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="flash-message">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+<div class="container">
+<div class="conten">
+    <h1>Error Quiestions</h1>
+    <div class="imagen">
+        <img src="../file/icon/LogoChatbot.png" alt="logo" style="width:400px"> 
+        </div>
+</div>
+
+<div class="conten2">
+   
+    <div class="scroll">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Question</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for error in errors %}
+            <tr>
+                <td>{{ error[0] }}</td>
+                <td>{{ error[1] }}</td>
+                <td></button><form action="{{ url_for('delete_error', id=error[0]) }}" method="post">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button class="icono-btn-delete" onclick="return confirm('¿Estás seguro de que deseas eliminar esta pregunta?');"></button>
+                  </form></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+</body>
+<script>
+    setTimeout(function() {
+  document.querySelector('.flash-message').remove();
+}, 5000);
+
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../file/icon/chatbot.png" sizes="16x16">
+    <link rel="stylesheet" href='/file/css/admin.css' />
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="flash-message">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+    <div class="conten-login">
+        <div class="img">
+            <img src="../file/icon/LogoChatbot.png" alt="logo" style="width:400px"> 
+        </div>
+    {% if mensaje %}
+        <p class="mensaje">{{ mensaje }}</p>
+    {% endif %}
+    <div class="login">
+    <form style="width: 70%;" method="post" action="{{ url_for('login') }}">
+        <label for="username">User_Name:</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+</div>
+</body>
+<script>
+    setTimeout(function() {
+  document.querySelector('.flash-message').remove();
+}, 5000);
+
+</script>
+</html>

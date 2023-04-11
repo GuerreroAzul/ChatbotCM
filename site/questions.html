@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionary</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../file/icon/chatbot.png" sizes="16x16">
+    <link rel="stylesheet" href='/file/css/admin.css' />
+
+</head>
+<body style="background-color: #CDD6E1;">
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Questionary</a></li>
+            <li><a href="{{ url_for('error') }}">Error Question</a> </li>
+            <li><a href="{{ url_for('user') }}">Users</a></li>
+            <li><a href="{{ url_for('logout') }}">Sign off</a></li>
+        </ul>
+    </nav>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="flash-message">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+<div class="container">
+<div class="conten">
+    <h1>User Records</h1>
+    <div class="imagen">
+        <img src="../file/icon/LogoChatbot.png" alt="logo" style="width:200px"> 
+        </div>
+   
+        <form name="questionform" method="POST" action="{{ url_for('save_question') }}">
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question"><br><br>
+
+        <label for="answer">Answer:</label>
+        <input type="text" id="answer" name="answer"><br><br>
+
+        <button onclick="return confirm('¿Estás seguro de que deseas guardar esta pregunta?');" type="submit">SAVE</button>
+    </form>
+</div>
+
+<div class="conten2">
+
+    <form style="display: flex;" action="{{ url_for('home') }}" method="GET">
+    <input type="text" id="search" name="search" placeholder="Search...">
+    <button class="icono-btn-search"></button>
+    </form>
+    <div class="scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Question</th>
+                    <th>Answer</th>
+                    <th>State</th>
+            
+                    <th>Operation</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for question in questions %}
+                <tr>
+                    <td>{{ question[0] }}</td>
+                    <td>{{ question[1] }}</td>
+                    <td>{{ question[2] }}</td>
+                    <td>{{ question[3] }}</td>
+                    <td>
+                        <button class="icono-btn-edit" onclick="editQuestion('{{ question[0] }}', '{{ question[1] }}', '{{ question[2] }}')"></button>
+                        <form action="{{ url_for('delete_question', id=question[0]) }}" method="post">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button onclick="return confirm('¿Estás seguro de que deseas deshabilitar esta pregunta?');" class="icono-btn-delete"></button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+</div>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span id="myBtn" class="close">&times;</span>
+      <h2>Edit Question</h2>
+      <form name="questionform1" method="POST" action="{{ url_for('edit_question_modal') }}">
+          <input type="hidden" id="id1" name="id1">
+          <label for="question">Question:</label>
+          <input type="text" id="question1" name="question1"><br><br>
+          <label for="answer">Answer:</label>
+          <input type="text" id="answer1" name="answer1"><br><br>
+          <button type="submit" onclick="return confirm('¿Estás seguro de que deseas actualizar esta pregunta?');">SAVE</button>
+      </form>
+    </div>
+  
+  </div>
+</div>
+</body>
+<script>
+    function editQuestion(id, question, answer) {
+    // Obtener el modal
+    var modal = document.getElementById("myModal");
+
+    // Mostrar el modal
+    modal.style.display = "block";
+
+    // Cargar los datos en el formulario
+    document.getElementById("id1").value = id;
+    document.getElementById("question1").value = question;
+    document.getElementById("answer1").value = answer;
+
+}
+setTimeout(function() {
+  document.querySelector('.flash-message').remove();
+}, 5000);
+
+    // Obtener el modal
+    var modal = document.getElementById("myModal");
+
+    // Obtener el botón que abre el modal
+    var btn = document.getElementById("myBtn");
+
+    // Obtener el botón de cierre (X)
+    var span = document.getElementsByClassName("close")[0];
+
+    // Cuando se hace clic en el botón X, cerrar el modal y volver a la página anterior
+    span.onclick = function() {
+        modal.style.display = "none";
+        window.location.reload();
+    }
+
+    // Cuando el usuario hace clic fuera del modal, cerrarlo y volver a la página anterior
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            window.location.reload();
+        }
+    }
+</script>
+</html>

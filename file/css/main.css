@@ -1,0 +1,138 @@
+/* Estilo para el cuerpo de la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: inline-flex;
+  
+  }
+  .chatbot {
+    margin: 5px auto;
+    width: 600px;
+    background-color: #CDD6E1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+ 
+    
+  }
+  
+.imagen{
+  margin: auto;
+
+}
+
+  .chat-header {
+    background-color: #566470;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .chat-body {
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+  }
+  
+  .chat-message {
+    background-color: #E6FAE0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+  }
+  
+  .chat-message p {
+    font-size: 14px;
+  }
+
+  .transcript {
+    margin-bottom: 20px;
+  }
+  /* Estilo para el texto de las transcripciones del usuario */
+  .transcript .user {
+    font-size: 16px;
+    margin: 0 0 10px;
+    background-color: #f1f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+  }
+  
+  /* Estilo para el texto de las transcripciones del bot */
+  .transcript .bot {
+    font-size: 16px;
+    margin: 0 0 10px;
+    color: #000;
+    background-color: #E6FAE0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  
+  }
+  
+  .chat-footer {
+    background-color: #f1f0f0;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .chat-footer form {
+    width: 100%;
+    display: flex;
+  }
+  
+  .chat-footer input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    width: 500px;
+    border-radius: 30px;
+    margin-right: 10px;
+  
+  }
+  
+  .chat-footer button[type="submit"] {
+    border: none;
+    padding: 5px 15px;
+    background-color: #f1f0f0;
+    color: #fff;
+    border-radius: 100px;
+    cursor: pointer;
+
+    
+  }
+  
+  .chat-footer button[type="submit"]:hover {
+    background-color: #e6e6e6;
+  }
+  .icono-btn-Login{
+
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #45a049;
+    margin: 5px;
+    margin-left: 200px;
+    text-align: center;
+    color: #fff;
+
+  }
+  .icono-btn-Login:hover{
+
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    margin: 5px;
+    margin-left: 200px;
+    text-align: center;
+    color: #fff;
+
+  }
