@@ -72,12 +72,14 @@ y más.</P></LI>
 </UL>
 
 <H2 id="Desarrolladores">:busts_in_silhouette: Desarrolladores del Proyecto</H2>
-<P>:small_blue_diamond: <B>Elsy Paola Amaya Lazo</B> - 201910040094</P>
-<P>:small_blue_diamond: <B>Orlin Fabricio Lagos</B>  - 201710110523</P>
+<UL>
+    <LI><P><B>Elsy Paola Amaya Lazo</B> - 201910040094</P></LI>
+    <LI><P><B>Orlin Fabricio Lagos</B>  - 201710110523</P></LI>
+</UL>
 
 <H2 id="Licencia">:page_facing_up: Licencia</H2>
 <P>Python se desarrolla bajo una licencia de Open source o código abierto aprobada por OSI, por lo que se puede usar y distribuir libremente, incluso para uso comercial.</P>
-<a href="https://opensource.org/license/cnri-python/">CNRI OPEN SOURCE LICENSE AGREEMENT</a>
-<a href="https://opensource.org/license/pythonsoftfoundation-php/">PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2</a>
+<P><a href="https://opensource.org/license/cnri-python/">CNRI OPEN SOURCE LICENSE AGREEMENT</a></P>
+<P><a href="https://opensource.org/license/pythonsoftfoundation-php/">PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2</a></P>
 
 <H2 id="Conclusión">:bookmark_tabs: Conclusión</H2>
