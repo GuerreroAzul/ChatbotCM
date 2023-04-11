@@ -15,7 +15,6 @@
 </P>
 <H1>Introducción</H1>
 
-##Índice
 
 *[Título e imagen de portada](#Título-e-imagen-de-portada)
 
