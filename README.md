@@ -38,43 +38,49 @@ elegir si desea realizar la consulta hablando o escribiendo.</P>
 <H2 id="Características">:eight_spoked_asterisk: Características de la aplicación y demostración</H2>
 
 <H2 id="Instalacion">:wrench: Instalacion del proyecto</H2>
+<UL>
+    <H3><B>Paso 1:</B></H3>
+        <UL>
+            <P Align="justify">Descargar el proyecto desde el siguiente enlace: <a href="https://github.com/GuerreroAzul/ChatbotCM.git">Enlace</a></P>
+        </UL>
+</UL>
 
 <H2 id="Acceso">:rocket: Acceso al proyecto</H2>
 
 <H2 id="Tecnologías">:books: Tecnologías utilizadas</H2>
 <UL>
-    <LI><H3><B>Lenguaje de Programación:</B></H3></LI>
+    <H3><B>Lenguaje de Programación:</B></H3>
         <UL>
-            <LI><P align="justify"><B>Python v.3.9:</B> Es un lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de software, la ciencia de datos y el machine learning (ML). Los desarrolladores utilizan Python porque es eficiente y fácil de aprender, además de que se puede ejecutar en muchas plataformas diferentes.</P></LI>
+            <P align="justify"><B>Python v.3.9:</B> Es un lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de software, la ciencia de datos y el machine learning (ML). Los desarrolladores utilizan Python porque es eficiente y fácil de aprender, además de que se puede ejecutar en muchas plataformas diferentes.</P>
         </UL>
-    <LI><H3><B>Firmware y librerias externas:</B></H3></LI>
+    <H3><B>Firmware y librerias externas:</B></H3>
         <UL>
-            <LI><P align="justify"><B>Regex:</B> Es un módulo de Python que proporciona operaciones de coincidencia de expresiones regulares similares a las que se encuentran en Perl. Es una herramienta poderosa para trabajar con datos de texto y le permite buscar, coincidir y manipular cadenas utilizando expresiones regulares.</P></LI>
-            <LI><P align="justify"><B>SpeechRecognition:</B> Es una librería de Python para realizar reconocimiento de voz, que es el proceso de convertir audio hablado en texto. Admite varios motores de reconocimiento de voz, incluidos Google Speech Recognition, Microsoft Bing Voice Recognition y otros.</P></LI>
-            <LI><P align="justify"><B>NLTK:</B> Significa Natural Language Toolkit, y es una librería de Python para trabajar con datos de lenguaje humano, incluidos datos de texto. Proporciona una amplia gama de herramientas y recursos para tareas como tokenización, reducción de palabras a su raíz, etiquetado, análisis sintáctico
-y más.</P></LI>
-            <LI><P align="justify"><B>Flask:</B> Para la creación y ejecución de la aplicación web.</P></LI>
-            <LI><P align="justify"><B>Unicode:</B> Para convertir caracteres a su representación ASCII equivalente.</P></LI>
+            <P align="justify"><B>Regex:</B> Es un módulo de Python que proporciona operaciones de coincidencia de expresiones regulares similares a las que se encuentran en Perl. Es una herramienta poderosa para trabajar con datos de texto y le permite buscar, coincidir y manipular cadenas utilizando expresiones regulares.</P>
+            <P align="justify"><B>SpeechRecognition:</B> Es una librería de Python para realizar reconocimiento de voz, que es el proceso de convertir audio hablado en texto. Admite varios motores de reconocimiento de voz, incluidos Google Speech Recognition, Microsoft Bing Voice Recognition y otros.</P>
+            <P align="justify"><B>NLTK:</B> Significa Natural Language Toolkit, y es una librería de Python para trabajar con datos de lenguaje humano, incluidos datos de texto. Proporciona una amplia gama de herramientas y recursos para tareas como tokenización, reducción de palabras a su raíz, etiquetado, análisis sintáctico
+y más.</P>
+            <P align="justify"><B>Flask:</B> Para la creación y ejecución de la aplicación web.</P>
+            <P align="justify"><B>Unicode:</B> Para convertir caracteres a su representación ASCII equivalente.</P>
         </UL>
-    <LI><H3><B>Entornos de desarrollo:</B></H3></LI>
+    <H3><B>Entornos de desarrollo:</B></H3>
         <UL>
-            <LI><P align="justify"><B>Visual Studio Code:</B> Es un editor de código fuente desarrollado por Microsoft para Windows, Linux, macOS y Web. Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código.</P></LI>
+            <P align="justify"><B>Visual Studio Code:</B> Es un editor de código fuente desarrollado por Microsoft para Windows, Linux, macOS y Web. Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código.</P>
         </UL>
-    <LI><H3><B>Desarrollo de interfaz:</B></H3></LI>
+    <H3><B>Desarrollo de interfaz:</B></H3>
         <UL>
-            <LI><P align="justify"><B>HTML5:</B> Siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web.</P></LI>
-            <LI><P align="justify"><B>CSS:</B> En español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</P></LI>
+            <P align="justify"><B>HTML5:</B> Siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web.</P>
+            <P align="justify"><B>CSS:</B> En español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</P>
         </UL>
-    <LI><H3><B>Base de datos:</B></H3></LI>
+    <H3><B>Base de datos:</B></H3>
         <UL>
-            <LI><P align="justify"><B>SQLite:</B> SQLite es un sistema de gestión de bases de datos relacional compatible con ACID, contenida en una relativamente pequeña (~275 kiB) biblioteca escrita en C. SQLite es un proyecto de dominio público creado por D. Richard Hipp.</P></LI>
+            <P align="justify"><B>SQLite:</B> SQLite es un sistema de gestión de bases de datos relacional compatible con ACID, contenida en una relativamente pequeña (~275 kiB) biblioteca escrita en C. SQLite es un proyecto de dominio público creado por D. Richard Hipp.</P>
         </UL>
 </UL>
 
 <H2 id="Desarrolladores">:busts_in_silhouette: Desarrolladores del Proyecto</H2>
 <UL>
-    <LI><P><B>Elsy Paola Amaya Lazo</B> - 201910040094</P></LI>
-    <LI><P><B>Orlin Fabricio Lagos</B>  - 201710110523</P></LI>
+    <P><B>Elsy Paola Amaya Lazo</B> - 201910040094</P>
+    <P><B>Orlin Fabricio Lagos</B>  - 201710110523</P>
 </UL>
 
 <H2 id="Licencia">:page_facing_up: Licencia</H2>
