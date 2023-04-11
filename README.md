@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/License-No%20license-inactive">
     <img src="https://img.shields.io/badge/Status-Finish-success">
 </P>
-<H1 id="Indice">Índice</H1>
+<H2 id="Indice">Índice</H2>
 
 * [Descripción del proyecto](#Descripcion)
 * [Estado del proyecto](#Estado)
@@ -25,24 +25,26 @@
 * [Licencia](#Licencia)
 * [Conclusión](#Conclusión)
 
-<H1 id="Descripcion">Descripción del proyecto</H1>
-<P align="justify">Este es un proyecto de IA que consiste en la implementación de un chatbot con reconocimiento de texto. Utiliza varias bibliotecas como Speech_Recognition y NLTK para procesamiento del lenguaje natural, tokenización, análisis sintáctico y lematización, entre otras cosas. El chatbot está entrenado con pares de patrones de
+<H2 id="Descripcion">:notebook: Descripción del proyecto</H2>
+<P align="justify">Este es un proyecto de IA que consiste en la implementación de un chatbot con reconocimiento de texto. Utiliza varias bibliotecas como <B>Speech_Recognition</B> y <B>NLTK</B> para procesamiento del lenguaje natural, tokenización, análisis sintáctico y lematización, entre otras cosas. El chatbot está entrenado con pares de patrones de
 respuestas para poder comprender el lenguaje natural y responder a las preguntas de los usuarios en el área de la medicina. El chatbot también permite al usuario
 elegir si desea realizar la consulta hablando o escribiendo.</P>
 <P>Este código es un programa de chatbot que utiliza reconocimiento de voz para permitir al usuario hablar con el chatbot. El chatbot es capaz de proporcionar información médica básica en respuesta a las preguntas del usuario.</P>   
 
-<H1 id="Estado">Estado del proyecto</H1>
+<H2 id="Estado">:closed_book: Estado del proyecto</H2>
 
-<H1 id="Características">Características de la aplicación y demostración</H1>
+<H2 id="Características">:eight_spoked_asterisk: Características de la aplicación y demostración</H2>
 
-<H1 id="Instalacion">Instalacion del proyecto</H1>
+<H2 id="Instalacion">:wrench: Instalacion del proyecto</H2>
 
-<H1 id="Acceso">Acceso al proyecto</H1>
+<H2 id="Acceso">:rocket: Acceso al proyecto</H2>
 
-<H1 id="Tecnologías">Tecnologías utilizadas</H1>
+<H2 id="Tecnologías">:books: Tecnologías utilizadas</H2>
 
-<H1 id="Desarrolladores">Desarrolladores del Proyecto</H1>
+<H2 id="Desarrolladores">:busts_in_silhouette: Desarrolladores del Proyecto</H2>
+<P>:small_blue_diamond: Elsy Paola Amaya Lazo - 201910040094</P>
+<P>:small_blue_diamond: Orlin Fabricio Lagos  - 201710110523</P>
 
-<H1 id="Licencia">Licencia</H1>
+<H2 id="Licencia">:page_facing_up: Licencia</H2>
 
-<H1 id="Conclusión">Conclusión</H1>
+<H2 id="Conclusión">:bookmark_tabs: Conclusión</H2>
