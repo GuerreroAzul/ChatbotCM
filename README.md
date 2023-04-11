@@ -13,11 +13,12 @@
     <img src="https://img.shields.io/badge/License-No%20license-inactive">
     <img src="https://img.shields.io/badge/Status-Finish-success">
 </P>
-<H1>Indice</H1>
-##Indice
-* [Portada](#Inicio)
-* [Insignias](#Insignias)
-* [Índice](#índice)
+<H1>Descripcion del proyecto</H1>
+<P align="justify">Este es un proyecto de IA que consiste en la implementación de un chatbot con reconocimiento de texto. Utiliza varias bibliotecas como Speech_Recognition y NLTK para procesamiento del lenguaje natural, tokenización, análisis sintáctico y lematización, entre otras cosas. El chatbot está entrenado con pares de patrones de
+respuestas para poder comprender el lenguaje natural y responder a las preguntas de los usuarios en el área de la medicina. El chatbot también permite al usuario
+elegir si desea realizar la consulta hablando o escribiendo.</P>
+<P>Este código es un programa de chatbot que utiliza reconocimiento de voz para permitir al usuario hablar con el chatbot. El chatbot es capaz de proporcionar información médica básica en respuesta a las preguntas del usuario.</P> 
+    
 * [Descripción del proyecto](#descripción-del-proyecto)
 * [Estado del proyecto](#Estado-del-proyecto)
 * [Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
