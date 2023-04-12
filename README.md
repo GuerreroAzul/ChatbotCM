@@ -14,29 +14,29 @@
 
 ## Índice
 
-* [Descripción del proyecto](#Descripcion)
-* [Estado del proyecto](#Estado)
-* [Características de la aplicación y demostración](#Características)
-* [Instalacion del proyecto](#Instalacion)
-* [Acceso al proyecto](#Acceso)
-* [Tecnologías utilizadas](#Tecnologías)
-* [Desarrolladores del Proyecto](#Desarrolladores)
-* [Licencia](#Licencia)
-* [Conclusión](#Conclusión)
+1. [Descripción del proyecto](#A)
+3. [Estado del proyecto](#B)
+4. [Características de la aplicación y demostración](#C)
+5. [Instalacion del proyecto](#D)
+6. [Acceso al proyecto](#E)
+7. [Tecnologías utilizadas](#F)
+8. [Desarrolladores del Proyecto](#G)
+9. [Licencia](#H)
+10. [Conclusión](#I)
 
-<a id="#Descripcion"></a>
+<a name="A"></a>
 ## :notebook: Descripción del proyecto
 
 <p align="justify">Este es un proyecto de IA que consiste en la implementación de un chatbot con reconocimiento de texto. Utiliza varias bibliotecas como <b>Speech_Recognition</b> y <b>NLTK</b> para procesamiento del lenguaje natural, tokenización, análisis sintáctico y lematización, entre otras cosas. El chatbot está entrenado con pares de patrones de respuestas para poder comprender el lenguaje natural y responder a las preguntas de los usuarios en el área de la medicina. El chatbot también permite al usuario elegir si desea realizar la consulta hablando o escribiendo.</p>
 
 <p align="justify">Este código es un programa de chatbot que utiliza reconocimiento de voz para permitir al usuario hablar con el chatbot. El chatbot es capaz de proporcionar información médica básica en respuesta a las preguntas del usuario.</p>   
 
-<a id="#Estado"></a>
+<a name="B"></a>
 ## :closed_book: Estado del proyecto
 
 Este se encuentra en estado de testeo y pruebas, de lo cual le falta realizar mas el entrenamiento de la IA.
 
-<a id="#Características"></a>
+<a name="C"></a>
 ## :eight_spoked_asterisk: Características de la aplicación y demostración
 
 ### Chatbot
@@ -54,6 +54,7 @@ Este se encuentra en estado de testeo y pruebas, de lo cual le falta realizar ma
 ### Control de Usuarios
 ![image](https://user-images.githubusercontent.com/69611007/231588614-80f76621-f721-410a-b1f8-abdd08adc257.png)
 
+<a name="D"></a>
 ## :wrench: Instalacion del proyecto
 **Paso 1:** Descargar el proyecto desde el siguiente enlace: [ChatbotCM](https://github.com/GuerreroAzul/ChatbotCM.git)
 
@@ -77,6 +78,7 @@ sudo apt install libasound-dev portaudio19-dev -y
 pip install pyaudio SpeechRecognition nltk numpy && pip3 install flask
 ```
 
+<a name="E"></a>
 ## :rocket: Acceso al proyecto
 **Paso 1:** En la carpeta raiz ejecutamos la terminal el siguiente comando:
 ```Shell
@@ -87,6 +89,7 @@ python3 admin.py
 
 ![image](https://user-images.githubusercontent.com/69611007/231585675-0905f86c-63c3-4d32-a659-a5d447b7455d.png)
 
+<a name="F"></a>
 ## :books: Tecnologías utilizadas
 
 ### ***Lenguaje de Programación:***
@@ -109,10 +112,12 @@ python3 admin.py
 ### ***Base de datos:***
 * **SQLite:** SQLite es un sistema de gestión de bases de datos relacional compatible con ACID, contenida en una relativamente pequeña (~275 kiB) biblioteca escrita en C. SQLite es un proyecto de dominio público creado por D. Richard Hipp.
 
+<a name="G"></a>
 ## :busts_in_silhouette: Desarrolladores del Proyecto
 * **Elsy Paola Amaya Lazo** - 201910040094
 * **Orlin Fabricio Lagos**  - 201710110523
 
+<a name="H"></a>
 ## :page_facing_up: Licencia
 Python se desarrolla bajo una licencia de Open source o código abierto aprobada por OSI, por lo que se puede usar y distribuir libremente, incluso para uso comercial.
 
@@ -120,4 +125,5 @@ Python se desarrolla bajo una licencia de Open source o código abierto aprobada
 
 [PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2](https://opensource.org/license/pythonsoftfoundation-php/)
 
+<a name="I"></a>
 ## :bookmark_tabs: Conclusión
