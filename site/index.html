@@ -19,11 +19,8 @@
           <table>
             <tbody>
               {% for chat in chats %}
-                <tr>
-                    <td>{{ chat[0] }}</td>
-                    <td>{{ chat[1] }}</td>
-                    <td>{{ chat[2] }}</td>
-                    <td>{{ chat[3] }}</td>
+                <tr class="transcript">
+                  <td class="{{ chat[2] }}" style="display: block"><img src="{{ chat[0] }}" height ="30px" width="30px" />{{ chat[1] }}</td>
                 </tr>
               {% endfor %}
             </tbody>

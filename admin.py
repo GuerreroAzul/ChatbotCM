@@ -43,7 +43,8 @@ def logout():
 @app.route('/')
 def index():
     # Verificar si el usuario ha iniciado sesión
-    SQL.ClearChat
+    SQL.ClearChat()
+    SQL.NewChat('../file/icon/chatbot.png','Hola, Soy un chatbot diseñado para proporcionar información médica básica.', 'bot')
     chats = SQL.Chat()
     return render_template('index.html', chats=chats)
 

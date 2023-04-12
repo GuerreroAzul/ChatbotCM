@@ -185,19 +185,19 @@ def Chat():
     conn = sqlite3.connect(DB)
     cursor = conn.cursor() 
 
-    cursor.execute("SELECT Tipo, Texto FROM chat")
+    cursor.execute("SELECT Tipo, Texto, Tipo2 FROM chat")
 
     chat = cursor.fetchall()
     conn.close()
     return chat
 
-def NewChat(tipo, texto):
+def NewChat(direccion, texto, tipo):
     # Conectarse a la base de datos
     conn = sqlite3.connect(DB)
     cursor = conn.cursor() 
 
     # Insertar el nuevo registro en la tabla chat
-    cursor.execute("INSERT INTO chat (Tipo, Texto) VALUES (?, ?)", (tipo, texto))
+    cursor.execute("INSERT INTO chat (Tipo, Texto, Tipo2) VALUES (?, ?, ?)", (direccion, texto, tipo))
     conn.commit()
     conn.close()
 
@@ -207,6 +207,6 @@ def ClearChat():
     conn = sqlite3.connect(DB)
     cursor = conn.cursor()
 
-    cursor.execute("DELETE FROM chat WHERE id>1")
+    cursor.execute('''DELETE FROM chat''')
     conn.commit()
     conn.close()

@@ -27,8 +27,8 @@ def Response(transcript):
         if str(response) == 'None':
             response = "Lo siento, no entiendo tu pregunta."
             NewErrors(transcript)
-            NewChat('User: ', transcript)
-            NewChat('Chatbot: ', response)
+            NewChat('../file/icon/usuario.png', transcript, 'user')
+            NewChat('../file/icon/chatbot.png', response, 'bot')
         else:
-            NewChat('User: ', transcript)
-            NewChat('Chatbot: ', response)
+            NewChat('../file/icon/usuario.png', transcript, 'user')
+            NewChat('../file/icon/chatbot.png', response, 'bot')
