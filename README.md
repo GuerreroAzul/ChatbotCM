@@ -36,6 +36,21 @@ Este se encuentra en estado de testeo y pruebas, de lo cual le falta realizar ma
 
 ## :eight_spoked_asterisk: Características de la aplicación y demostración
 
+### Chatbot
+![image](https://user-images.githubusercontent.com/69611007/231585789-afa3a07b-9750-469e-b133-2ba1044e5d70.png)
+
+### Interfaz de entrada
+![image](https://user-images.githubusercontent.com/69611007/231588039-305b41ca-b125-401c-8ff9-7df6a9030cc5.png)
+
+### Control de preguntas
+![image](https://user-images.githubusercontent.com/69611007/231588207-87f9238b-1b2a-46b3-81f3-333eb6dbbe8b.png)
+
+### Control de Nuevas Preguntas
+![image](https://user-images.githubusercontent.com/69611007/231588613-4f85cbed-acbd-4961-bb55-f731ec2be9d8.png)
+
+### Control de Usuarios
+![image](https://user-images.githubusercontent.com/69611007/231588614-80f76621-f721-410a-b1f8-abdd08adc257.png)
+
 ## :wrench: Instalacion del proyecto
 **Paso 1:** Descargar el proyecto desde el siguiente enlace: [ChatbotCM](https://github.com/GuerreroAzul/ChatbotCM.git)
 
@@ -64,8 +79,10 @@ pip install pyaudio SpeechRecognition nltk numpy && pip3 install flask
 ```Shell
 python3 admin.py
 ```
-**Paso 2:** Selecionaos ***Ctrl + Clic izquierdo*** en la direccion: **"127.0.0.1:5000"** para acceder al proyecto:
+**Paso 2:** Selecionamos ***Ctrl + Clic izquierdo*** en la direccion: **"127.0.0.1:5000"** para acceder al proyecto:
 ![Terminal](https://user-images.githubusercontent.com/69611007/231316081-6628c1e3-21c2-4d28-bf91-04fb8992d998.png)
+
+![image](https://user-images.githubusercontent.com/69611007/231585675-0905f86c-63c3-4d32-a659-a5d447b7455d.png)
 
 ## :books: Tecnologías utilizadas
 
@@ -95,7 +112,9 @@ python3 admin.py
 
 ## :page_facing_up: Licencia
 Python se desarrolla bajo una licencia de Open source o código abierto aprobada por OSI, por lo que se puede usar y distribuir libremente, incluso para uso comercial.
+
 [CNRI OPEN SOURCE LICENSE AGREEMENT](https://opensource.org/license/cnri-python/)
+
 [PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2](https://opensource.org/license/pythonsoftfoundation-php/)
 
 ## :bookmark_tabs: Conclusión
