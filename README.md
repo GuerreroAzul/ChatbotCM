@@ -24,16 +24,19 @@
 * [Licencia](#Licencia)
 * [Conclusión](#Conclusión)
 
+<a id="#Descripcion"></a>
 ## :notebook: Descripción del proyecto
 
 <p align="justify">Este es un proyecto de IA que consiste en la implementación de un chatbot con reconocimiento de texto. Utiliza varias bibliotecas como <b>Speech_Recognition</b> y <b>NLTK</b> para procesamiento del lenguaje natural, tokenización, análisis sintáctico y lematización, entre otras cosas. El chatbot está entrenado con pares de patrones de respuestas para poder comprender el lenguaje natural y responder a las preguntas de los usuarios en el área de la medicina. El chatbot también permite al usuario elegir si desea realizar la consulta hablando o escribiendo.</p>
 
 <p align="justify">Este código es un programa de chatbot que utiliza reconocimiento de voz para permitir al usuario hablar con el chatbot. El chatbot es capaz de proporcionar información médica básica en respuesta a las preguntas del usuario.</p>   
 
+<a id="#Estado"></a>
 ## :closed_book: Estado del proyecto
 
 Este se encuentra en estado de testeo y pruebas, de lo cual le falta realizar mas el entrenamiento de la IA.
 
+<a id="#Características"></a>
 ## :eight_spoked_asterisk: Características de la aplicación y demostración
 
 ### Chatbot
