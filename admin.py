@@ -185,7 +185,8 @@ def result():
         choice = request.form['choice']
         if choice == 'h':
             textbox = Speed()
-            return render_template('index.html', textbox=textbox)
+            chats = SQL.Chat()
+            return render_template('index.html', textbox=textbox, chats=chats)
         elif choice == 'e':
             transcript = request.form['text']
             Chat(transcript)
