@@ -29,7 +29,7 @@
 
 <p align="justify">Este es un proyecto de IA que consiste en la implementación de un chatbot con reconocimiento de texto. Utiliza varias bibliotecas como <b>Speech_Recognition</b> y <b>NLTK</b> para procesamiento del lenguaje natural, tokenización, análisis sintáctico y lematización, entre otras cosas. El chatbot está entrenado con pares de patrones de respuestas para poder comprender el lenguaje natural y responder a las preguntas de los usuarios en el área de la medicina. El chatbot también permite al usuario elegir si desea realizar la consulta hablando o escribiendo.</p>
 
-<p align="justify">Este código es un programa de chatbot que utiliza reconocimiento de voz para permitir al usuario hablar con el chatbot. El chatbot es capaz de proporcionar información médica básica en respuesta a las preguntas del usuario.</p>   
+<p align="justify">Este código es un programa de chatbot que utiliza reconocimiento de voz para permitir al usuario hablar con el chatbot. El chatbot es capaz de proporcionar información médica básica en respuesta a las preguntas del usuario.</p>
 
 <a name="B"></a>
 ## :closed_book: Estado del proyecto
@@ -75,7 +75,7 @@ sudo apt install libasound-dev portaudio19-dev -y
 
 **Paso 4:** Instalamos las librerias usadas en el proyecto.
 ```Shell
-pip install pyaudio SpeechRecognition nltk numpy && pip3 install flask
+pip install pyaudio SpeechRecognition nltk numpy && pip3 install flask && pip install -U scikit-learn
 ```
 
 <a name="E"></a>
@@ -127,3 +127,5 @@ Python se desarrolla bajo una licencia de Open source o código abierto aprobada
 
 <a name="I"></a>
 ## :bookmark_tabs: Conclusión
+
+<p align="justify">Consiste en la creación de un chatbot que utiliza un modelo de aprendizaje automático para responder preguntas y una herramienta de reconocimiento de voz para permitir a los usuarios interactuar con el chatbot mediante comandos de voz. El archivo FnNLTK.py contiene el código para entrenar el modelo de chatbot utilizando el paquete Natural Language Toolkit (NLTK) y la biblioteca scikit-learn para crear un modelo de vectorización de términos de frecuencia de documentos invertidos (TF-IDF) y el cálculo de similitud coseno para encontrar la respuesta más adecuada a la pregunta del usuario. El archivo FnSpeechRecognition.py utiliza la biblioteca SpeechRecognition para capturar y transcribir los comandos de voz del usuario. En general, el proyecto tiene como objetivo facilitar la interacción con el chatbot a través de una herramienta de reconocimiento de voz y proporcionar respuestas precisas y relevantes utilizando un modelo de aprendizaje automático entrenado previamente.</p>

@@ -4,7 +4,7 @@ app.secret_key = '\xef\xd2-\xe8\x91\xb9\xae\xef\xdfz\xb3\x15[\xcc\xad\x1fh@\xab\
 
 import Fnpy.FnSQLite3 as SQL
 from Fnpy.FnSpeechRecognition import Speed_to_text as Speed
-from Fnpy.FnNLTK import Response
+from Fnpy.FnNLTK import Chat
 
 # Función para verificar si el usuario ha iniciado sesión
 def check_login():
@@ -188,7 +188,7 @@ def result():
             return render_template('index.html', textbox=textbox)
         elif choice == 'e':
             transcript = request.form['text']
-            Response(transcript)
+            Chat(transcript)
             chats = SQL.Chat()
             return render_template('index.html', chats=chats)
         else:

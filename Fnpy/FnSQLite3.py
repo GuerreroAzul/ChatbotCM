@@ -95,7 +95,7 @@ def NewErrors(transcript):
     cursor = conn.cursor()
 
     # Insertar los datos en la tabla error
-    cursor.execute('''INSERT INTO error (question,state) VALUES (?, ?)''', (str(transcript), 'Activo'))
+    cursor.execute("INSERT INTO error (question, state) VALUES (? ,? )", (transcript, 'Activo'))
 
     # Guardar los cambios
     conn.commit()
@@ -107,7 +107,7 @@ def DelErrors(id):
     cursor = conn.cursor()
 
     # Actualizar el estado de la pregunta a "Inactivo"
-    cursor.execute("UPDATE error SET state = 'Inactivo' WHERE id = ?", (id,))
+    cursor.execute("UPDATE error SET state = 'Inactivo' WHERE id = ?", (id, ))
     
     # Guardar los cambios
     conn.commit()
